@@ -1,0 +1,6 @@
+<label class="btn btn-outline-secondary" 
+     *ngFor="let test of tests"  >
+      <input type="checkbox" [(ngModel)]="test.selected" > {{test.name}}
+      
+    </label><br/>
+    <button name="btn" (click)="submitCheck()" >Submit</button>
